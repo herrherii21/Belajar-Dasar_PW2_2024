@@ -1,0 +1,58 @@
+const gambar = document.getElementById('gambar');
+undefined
+gambar.setAttribute('width', 300);
+undefined
+gambar.setAttribute('height', 215);
+undefined
+const buttons = document.querySelectorAll('.button');
+undefined
+button;
+VM450:1 Uncaught ReferenceError: button is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM450:1
+buttons;
+NodeList(5) [div.button, div.button, div.button, div.button, div.button]0: div.button1: div.button2: div.button3: div.button4: div.buttonlength: 5[[Prototype]]: NodeList
+const playButton = button[3];
+VM691:1 Uncaught ReferenceError: button is not defined
+    at <anonymous>:1:20
+(anonymous) @ VM691:1
+const playButton = buttonS[3];
+VM695:1 Uncaught ReferenceError: buttonS is not defined
+    at <anonymous>:1:20
+(anonymous) @ VM695:1
+const playButton = buttons[3];
+undefined
+buttons;
+NodeList(5) [div.button, div.button, div.button, div.button, div.button]0: div.button1: div.button2: div.button3: div.button4: div.buttonlength: 5[[Prototype]]: NodeList
+playButton;
+<div class=​"button">​<button>​Play (Coming Soon)​</button>​</div>​
+const playButtonElement = playButton.children[0];
+undefined
+playButtonElement;
+
+<button>​Play (Coming Soon)​</button>​
+playButtonElement.setAttribute('type','submit');
+undefined
+const buttons = document.getElementByClassName('button');
+VM1252:1 Uncaught TypeError: document.getElementByClassName is not a function
+    at <anonymous>:1:26
+(anonymous) @ VM1252:1
+const buttons = document.getElementByClassName('button');
+VM1257:1 Uncaught TypeError: document.getElementByClassName is not a function
+    at <anonymous>:1:26
+(anonymous) @ VM1257:1
+const buttons = document.getElementsByClassName('button');
+undefined
+for (const button of buttons) {
+    console.log(button.children[0]);
+    }
+VM1390:2 <button>​Sejarah​</button>​
+VM1390:2 <button>​Permainan​</button>​
+VM1390:2 <button>​…​</button>​
+VM1390:2 <button type=​"submit">​Play (Coming Soon)​</button>​
+VM1390:2 <button>​Exit​</button>​
+undefined
+for (const button of buttons) {
+    button.children[0].style.borderRadius = '6px';
+    }
+'6px'
